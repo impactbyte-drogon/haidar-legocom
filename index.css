@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,500,800');
+body {
+    margin: 0;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+a:hover {
+    color: #888;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.header {
+    padding: 15px;
+}
+
+.logo {
+    width: 60px;
+}
+
+.menu {
+    margin-left: 20px;
+    line-height: 60px;
+    vertical-align: text-bottom;
+}
+
+.menu .logo {
+    margin-right: 30px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+@media (max-width: 640px) {
+    .menu a {
+        text-transform: capitalize;
+        margin-right: 10px;
+    }
+}
+
+.cover {
+    height: 300px;
+    min-height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cover-title {
+    margin: 0;
+    color: #eee;
+    text-align: center;
+    padding: 120px 0;
+    text-shadow: 4px 4px #000;
+    font-size: 60px;
+}
+
+@media (max-width: 640px) {
+    .cover-title {
+        font-size: 30px;
+    }
+}
+
+.content {
+    margin: 0;
+    padding: 30px;
+}
+
+.content-title {
+    color: #555;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.thumbnail {
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: 200px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.thumbnail a {
+    display: grid;
+}
+
+.thumbnail img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumbnail span {
+    padding: 10px;
+}
+
+@media (max-width: 640px) {
+    .thumbnail {
+        width: 100%;
+    }
+    .thumbnail img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .thumbnails {
+        justify-content: flex-start;
+    }
+    .thumbnail {
+        width: 300px;
+    }
+    .thumbnail img {
+        height: 200px;
+    }
+}
+
+.footer {
+    background: #9abaff;
+    padding: 30px;
+    display: flex;
+}
+
+.footer-sitemap ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 40px;
+}
+
+.footer-sitemap ul li {
+    margin-bottom: 5px;
+}
+
+.footer-sitemap ul a {
+    color: #333;
+}
+
+.footer-sitemap ul a:hover {
+    text-decoration: underline;
+}
+
+.credits {
+    color: #eee;
+    background: #427eff;
+    padding: 20px;
+}
